@@ -35,9 +35,7 @@ steps:
     replaceExistingArchive: true
     verbose: # (no value); this input is optional
     
-- task: AzureRmWebAppDeployment@4
+- task: PublishPipelineArtifact@1
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'basatrij-Microsoft Azure Internal Consumption (f48fc410-8cdb-41ae-bbd1-2a1e002db773)'
-    appType: 'webAppLinux'
-    WebAppName: 'python-flask2820'
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'python-flask'
