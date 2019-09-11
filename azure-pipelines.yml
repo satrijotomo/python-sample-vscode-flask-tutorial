@@ -41,4 +41,3 @@ steps:
     azureSubscription: 'basatrij-Microsoft Azure Internal Consumption (f48fc410-8cdb-41ae-bbd1-2a1e002db773)'
     appType: 'webAppLinux'
     WebAppName: 'python-flask2820'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
